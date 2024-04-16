@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\DepartmentsController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InvoicesController;
 use Illuminate\Support\Facades\Auth;
@@ -19,6 +20,7 @@ Auth::routes(['register' => false]);
 Route::get('/home', [HomeController::class, 'index'])->name('home');
 
 Route::resource('invoices', InvoicesController::class);
+Route::resource('departments', DepartmentsController::class);
 
 
 

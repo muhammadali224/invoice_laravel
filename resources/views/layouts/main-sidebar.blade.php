@@ -22,8 +22,8 @@
                         class="avatar-status profile-status bg-green"></span>
                 </div>
                 <div class="user-info">
-                    <h4 class="font-weight-semibold mt-3 mb-0">{{Auth::user()->name}}</h4>
-                    <span class="mb-0 text-muted">{{Auth::user()->email}}</span>
+                    <h4 class="font-weight-semibold mt-3 mb-0">{{ Auth::user()->name }}</h4>
+                    <span class="mb-0 text-muted">{{ Auth::user()->email }}</span>
                 </div>
             </div>
         </div>
@@ -118,7 +118,7 @@
                         </g>
                     </svg><span class="side-menu__label">الإعدادات</span><i class="angle fe fe-chevron-down"></i></a>
                 <ul class="slide-menu">
-                    <li><a class="slide-item" href="{{ url('/' . ($page = 'profile')) }}">إضافة قسم</a></li>
+                    <li><a class="slide-item" href="{{ url('/' . ($page = 'departments')) }}">الاقسام</a></li>
                     <li><a class="slide-item" href="{{ url('/' . ($page = 'editprofile')) }}">إضافة منتج</a></li>
 
                 </ul>
